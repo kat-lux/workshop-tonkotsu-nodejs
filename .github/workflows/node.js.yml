@@ -32,5 +32,4 @@ jobs:
       uses: Azure/webapps-deploy@v2
       with:
         app-name: team1testapp
-        publish-profile: team1testapp(staging).publishsettings
-        slot-name: staging
+        publish-profile: ${{ secrets.MYSECRET }}
